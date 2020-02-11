@@ -1,0 +1,113 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.bg-inverse {
+    background-color: #4A76A8 !important;
+}
+
+nav.navbar {
+    height: 42px;
+}
+
+body {
+    background-color: #EDEEF0;
+}
+
+a {
+    color: #476C87;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    background-color: #edeef0;
+    color: #456B86;
+}
+
+.nav-pills .nav-item.show .nav-link:hover, .nav-pills .nav-link:hover {
+    background-color: #E1E5EB;
+    color: #456B86;
+}
+
+.fixed-block {
+    position: fixed;
+    max-width: 245px;
+}
+
+p.text-grey {
+    color: #9B9DA1;
+    font-size: 11px;
+    margin: 25px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-block {
+      position: static;
+  }
+}

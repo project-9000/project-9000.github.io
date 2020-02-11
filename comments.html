@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Мой проект</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <link href="project.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <div class="container">
+        <a class="navbar-brand" href="#">Мой проект</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-3 fixed-block">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <i class="fa fa-edit"></i>
+                  Мои работы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contests.html">
+                  <i class="fa fa-magic"></i>
+                  Мои конкурсы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comments.html">
+                  <i class="fa fa-comments"></i>
+                  Мои комментарии
+                </a>
+              </li>
+            </ul>
+            <p class="text-grey">
+              Powered by NAGIBATOR9000
+            </p>
+          </div>
+        </div>
+        <div class="row">
+        <main class="col-sm-8 col-md-9 pb-5 offset-sm-4 offset-md-3">
+          <h1>Мои комментарии</h1>
+
+          <!-- Put this script tag to the <head> of your page -->
+          <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
+
+          <script type="text/javascript">
+            VK.init({apiId: 7317332, onlyWidgets: true});
+          </script>
+
+          <!-- Put this div tag to the place, where the Comments block will be -->
+          <div id="vk_comments"></div>
+          <script type="text/javascript">
+          VK.Widgets.Comments("vk_comments", {limit: 10, attach: false});
+          </script>
+
+        </main>
+      </div>
+      </div>
+    </div>
+
+  </body>
+</html>
